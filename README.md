@@ -108,9 +108,14 @@ Excute the python file.
 <!-- CONTACT -->
 ## Contact
 
+<<<<<<< HEAD
 Gyuyeop Kim : rlarbduq777@gmail.com
 
 MJ : know901122@gmail.com
+=======
+know901122@gmail.com
+rlarbduq777@gmail.com
+>>>>>>> afac172c6bd502f280ededbfc800a2fc2967d57a
 
 ## Citation
 ```

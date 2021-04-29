@@ -15,6 +15,49 @@ USER_TYPE='student' # 'student' or 'others'
 USER='USER ID'
 PASSWORD='PASSWORD'
 chrome_dir=r'C:\Users\DELL\Desktop\chromedriver.exe'
+<<<<<<< HEAD
+=======
+day=date.today()
+cur_month=day.strftime("%m")
+year=day.strftime("%y")
+cur_month=int(cur_month)
+year=int(year)
+
+d=webdriver.Chrome(chrome_dir)
+url='https://safe.knu.ac.kr/Account/LogOn'
+d.get(url)
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6dcf48526febec5cbeb2388890add872b5615a5f
+if USER_TYPE=='student':
+    id_var=d.find_element_by_xpath('//*[@id="stdUniqueKey"]')
+    id_var.send_keys(USER)
+    id_var=d.find_element_by_xpath('//*[@id="stdPassword"]')
+    id_var.send_keys(PASSWORD)
+    d.find_element_by_xpath('//*[@id="btnStudent"]').click()
+<<<<<<< HEAD
+=======
+    d.find_element_by_xpath('//*[@id="contents"]/div/div[2]/a').click()
+>>>>>>> 6dcf48526febec5cbeb2388890add872b5615a5f
+    
+else:
+    id_var=d.find_element_by_id("userUniqueKey")
+    id_var.send_keys(USER)
+    id_var=d.find_element_by_id('userPassword')
+    id_var.send_keys(PASSWORD)
+
+d.find_element_by_id('btnUser').click()
+d.find_element_by_id('TopMenu_3').click()
+
+action=ActionChains(d)
+time.sleep(10)
+source=d.find_element_by_xpath('//*[@id="LabLawStatusInfo"]/div[1]/div/div[2]/div[2]/table/tbody/tr[5]/td[1]/a')
+action.move_to_element(source).click().perform()
+
+cur_url=d.current_url
+d.get(cur_url)
+>>>>>>> afac172c6bd502f280ededbfc800a2fc2967d57a
 
 #--------------------------------------------------------------------------------------------------------------------
 
