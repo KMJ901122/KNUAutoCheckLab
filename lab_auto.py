@@ -21,13 +21,20 @@ year=int(year)
 d=webdriver.Chrome(chrome_dir)
 url='https://safe.knu.ac.kr/Account/LogOn'
 d.get(url)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6dcf48526febec5cbeb2388890add872b5615a5f
 if USER_TYPE=='student':
     id_var=d.find_element_by_xpath('//*[@id="stdUniqueKey"]')
     id_var.send_keys(USER)
     id_var=d.find_element_by_xpath('//*[@id="stdPassword"]')
     id_var.send_keys(PASSWORD)
     d.find_element_by_xpath('//*[@id="btnStudent"]').click()
+<<<<<<< HEAD
+=======
+    d.find_element_by_xpath('//*[@id="contents"]/div/div[2]/a').click()
+>>>>>>> 6dcf48526febec5cbeb2388890add872b5615a5f
     
 else:
     id_var=d.find_element_by_id("userUniqueKey")
