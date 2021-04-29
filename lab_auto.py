@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from datetime import date
 import time
 
-USER='know1122'
-PASSWORD='rrah3517rr!'
+USER='USER ID'
+PASSWORD='PASSWORD'
 chrome_dir=r'C:\Users\DELL\Desktop\chromedriver.exe'
 day=date.today()
 cur_month=day.strftime("%m")
