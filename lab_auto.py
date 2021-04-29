@@ -41,8 +41,9 @@ d.find_element_by_id('TopMenu_3').click()
 
 action=ActionChains(d)
 time.sleep(10)
-source=d.find_element_by_xpath('//*[@id="LabLawStatusInfo"]/div[1]/div/div[2]/div[2]/table/tbody/tr[5]/td[1]/a')
+source=d.find_element_by_xpath('/html/body/div[6]/div[1]/button/span[1]')
 action.move_to_element(source).click().perform()
+d.find_element_by_xpath('//*[@id="main_bg_area_wrap"]/div[1]/div[1]/div[2]/ul/li[1]/a').click()
 
 cur_url=d.current_url
 d.get(cur_url)
