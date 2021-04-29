@@ -90,7 +90,12 @@ def find_path(i, j):
             check_all()
         except:
             pass
-
+        
+    try:
+        d.find_element_by_xpath('//*[@id="divList"]/div[2]/div/a[3]').click()
+        time.sleep(1)
+    except:
+        pass
 
 # row and column setting which is dependant on month and year
 month=1
