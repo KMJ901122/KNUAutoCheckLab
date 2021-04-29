@@ -15,8 +15,7 @@ USER_TYPE='student' # 'student' or 'others'
 USER='USER ID'
 PASSWORD='PASSWORD'
 chrome_dir=r'C:\Users\DELL\Desktop\chromedriver.exe'
-<<<<<<< HEAD
-=======
+
 day=date.today()
 cur_month=day.strftime("%m")
 year=day.strftime("%y")
