@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from datetime import date
 import time
 
+
+USER_TYPE='student' # 'student' or 'others'
 USER='USER ID'
 PASSWORD='PASSWORD'
 chrome_dir=r'C:\Users\DELL\Desktop\chromedriver.exe'
@@ -19,10 +21,19 @@ year=int(year)
 d=webdriver.Chrome(chrome_dir)
 url='https://safe.knu.ac.kr/Account/LogOn'
 d.get(url)
-id_var=d.find_element_by_id("userUniqueKey")
-id_var.send_keys(USER)
-id_var=d.find_element_by_id('userPassword')
-id_var.send_keys(PASSWORD)
+if USER_TYPE=='student':
+    id_var=d.find_element_by_xpath('//*[@id="stdUniqueKey"]')
+    id_var.send_keys(USER)
+    id_var=d.find_element_by_xpath('//*[@id="stdPassword"]')
+    id_var.send_keys(PASSWORD)
+    d.find_element_by_xpath('//*[@id="btnStudent"]').click()
+    
+else:
+    id_var=d.find_element_by_id("userUniqueKey")
+    id_var.send_keys(USER)
+    id_var=d.find_element_by_id('userPassword')
+    id_var.send_keys(PASSWORD)
+
 d.find_element_by_id('btnUser').click()
 d.find_element_by_id('TopMenu_3').click()
 
