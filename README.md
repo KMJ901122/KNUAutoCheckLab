@@ -90,13 +90,14 @@ Distributed under the MIT License. See `LICENSE` for more information. -->
 
 
 ## Usage
-You should change user and password into yours and download chromedriver with respect to your current chrome version. You can check your chrome version in the following way open chrome -> help -> chrome info
+You should change user, user type and password into yours and download chromedriver with respect to your current chrome version. You can check your chrome version in the following way open chrome -> help -> chrome info
 and download the chromedriver on the website https://chromedriver.chromium.org/downloads.
 
 Download 'auto_lab.py' file and change USER, PASSWORD into yours.
 Make sure where is the directory your chromedriver exists.
 
 ```python
+USER_TYPE='student' # default value is student, two types object : student or others
 USER='USER ID' # homepage id
 PASSWORD='PASSWORD' # password of id
 chrome_dir=r'directory\chromedriver.exe' # directory of choremdriver.exe
@@ -108,11 +109,12 @@ Excute the python file.
 ## Contact
 
 know901122@gmail.com
+rlarbduq777@gmail.com
 
 ## Citation
 ```
 @misc{
-  author = {MJ},
+  author = {MJ, Gyuyeop Kim},
   title = {KNUAutoCheckLab},
   year = {2021},
   publisher = {GitHub},
