@@ -27,6 +27,7 @@ if USER_TYPE=='student':
     id_var=d.find_element_by_xpath('//*[@id="stdPassword"]')
     id_var.send_keys(PASSWORD)
     d.find_element_by_xpath('//*[@id="btnStudent"]').click()
+    d.find_element_by_xpath('//*[@id="contents"]/div/div[2]/a').click()
     
 else:
     id_var=d.find_element_by_id("userUniqueKey")
