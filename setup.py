@@ -16,10 +16,9 @@ setup(
     name="knu_lab_auto",
     version="0.0.1",
     description="Auto check about lab safety",
-    url="https://github.com/keiohta/tf2rl",
-    author="Kei Ohta",
-    author_email="dev.ohtakei@gmail.com",
+    url="https://github.com/KMJ901122/KNUAutoCheckLab",
+    author="MJ",
+    author_email="know901122@gmail.com",
     license="MIT",
     packages=find_packages("."),
     install_requires=install_requires,
-    extras_require=extras_require)
