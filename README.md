@@ -97,10 +97,13 @@ You can use python file or .exe file. We recommend you to use .exe file. Downloa
 We enclosed chromedriver.exe (only chrome 90 version if you don't use chrome 90 version, you should download chromedriver.exe with regard to yours).
 Follow the next steps
 1. execute Lab Automation.exe.
-2. select user type, '1' : 'student', '2' : 'others'
-3. Enter ID
-4. Enter PASSWORD
+2. select user type, '1' : 'student+in charge', '2' : 'student', '3' : 'others'
+3. enter ID
+4. enter PASSWORD
 5. select chromedriver.exe (automatically pop up)
+
+*Note
+If it doesn't work, it is most likely because your current version of chrome is different with chrome 90 version; so you should download another chromedriver.
 
 Download chromedriver with respect to your current chrome version. You can check your chrome version in the following way open chrome -> help -> chrome info
 and download the chromedriver on the website https://chromedriver.chromium.org/downloads.
