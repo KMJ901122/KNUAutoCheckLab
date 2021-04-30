@@ -63,9 +63,9 @@
 
 Department of mathematics has no dangerous experiment tool except for the corruption of our mental during study; so having a dangerous thought.
 
-But, it is an obligation for us to check some kinds of inspection items which are "absolutely regardless of our work". Even the items are the same everyday. I dare to say it is corrupting our mental with hard work for studying at the same time.
+But, it is an obligation for us to check some kinds of inspection items which are "absolutely regardless of our work". Even the items are the same everyday. We dare to say it is corrupting our mental with hard work for studying at the same time.
 
-To avoid this kinds of useless things, I made an automatic check system. You can find how to use this on below. Hope you guys save both your mental and time.
+To avoid this kinds of useless things, we made an automatic check system. You can find how to use this on below. Hope you guys save both your mental and time.
 
 
 
@@ -90,20 +90,20 @@ Distributed under the MIT License. See `LICENSE` for more information. -->
 
 
 ## Usage
-You should change user, user type and password into yours and download chromedriver with respect to your current chrome version. You can check your chrome version in the following way open chrome -> help -> chrome info
+
+You can use python file or .exe file. We recommend you to use .exe file. Download the folder 'Lab Automation' or zip file 'Lab Automation.zip' and execute 'Lab Automation'. If you execute 'Lab Automation.exe' file, you will face the following image.
+![excution image](./usage_image.png)
+
+We enclosed chromedriver.exe (only chrome 90 version if you don't use chrome 90 version, you should download chromedriver.exe with regard to yours).
+Follow the next steps
+1. execute Lab Automation.exe.
+2. select user type, '1' : 'student', '2' : 'others'
+3. Enter ID
+4. Enter PASSWORD
+5. select chromedriver.exe (automatically pop up)
+
+Download chromedriver with respect to your current chrome version. You can check your chrome version in the following way open chrome -> help -> chrome info
 and download the chromedriver on the website https://chromedriver.chromium.org/downloads.
-
-Download 'auto_lab.py' file and change USER, PASSWORD into yours.
-Make sure where is the directory your chromedriver exists.
-
-```python
-USER_TYPE='student' # default value is student, two types object : student or others
-USER='USER ID' # homepage id
-PASSWORD='PASSWORD' # password of id
-chrome_dir=r'directory\chromedriver.exe' # directory of choremdriver.exe
-```
-
-Excute the python file.
 
 <!-- CONTACT -->
 ## Contact
