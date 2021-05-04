@@ -102,7 +102,7 @@ cur_month = int(cur_month)
 cur_year = int(cur_year)
 
 options = Options()
-#options.headless = True
+# options.headless = True
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 d = webdriver.Chrome(chrome_dir, options=options)
 
@@ -212,4 +212,4 @@ for k in range(len(lab_list)):
 print('\n------------------ 작업을 완료합니다. --------------------\n')
 time.sleep(3)
 d.close()
-exit()
+sys.exit()
