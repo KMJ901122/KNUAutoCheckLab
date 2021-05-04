@@ -1,0 +1,1 @@
+pyinstaller --hidden-import selenium, --hidden-import stdiomask --onefile lab_auto.py --icon=47133278.ico -n Lab_Automation
