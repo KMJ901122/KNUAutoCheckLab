@@ -100,7 +100,8 @@ Follow the next steps
 2. select user type, '1' : 'student+in charge', '2' : 'student', '3' : 'others'
 3. enter ID
 4. enter PASSWORD
-5. select chromedriver.exe (automatically pop up)
+5. enter Duration
+6. select chromedriver.exe (automatically pop up)
 
 *Note
 If it doesn't work, it is most likely because your current version of chrome is different with chrome 90 version; so you should download another chromedriver.
