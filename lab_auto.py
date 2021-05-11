@@ -44,8 +44,17 @@ def find_path(i, USER_TYPE):
             d.find_element_by_xpath(
                 '//*[@id="divList"]/div[3]/table/tbody/tr/td/p/a[1]').click()
             time.sleep(0.5)
+            
         except:
             pass
+        
+        if USER_TYPE == '1':
+            try:
+                WebDriverWait(d, 0.5).until(EC.element_to_be_clickable(
+                    (By.XPATH, '//*[@id="divList"]/div[2]/div/a[2]'))).click()
+                time.sleep(0.5)
+            except:
+                pass
 
     else:
         try:
@@ -61,13 +70,13 @@ def find_path(i, USER_TYPE):
         except:
             pass
 
-    if USER_TYPE == '1':
-        try:
-            WebDriverWait(d, 0.5).until(EC.element_to_be_clickable(
-                (By.XPATH, '//*[@id="divList"]/div[2]/div/a[3]'))).click()
-            time.sleep(0.5)
-        except:
-            pass
+        if USER_TYPE == '1':
+            try:
+                WebDriverWait(d, 0.5).until(EC.element_to_be_clickable(
+                    (By.XPATH, '//*[@id="divList"]/div[2]/div/a[3]'))).click()
+                time.sleep(0.5)
+            except:
+                pass
 
 
 # --------------------------------------------------------------------------------------------------------------------
